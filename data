@@ -107,7 +107,45 @@ Thus, each person will get 2 pieces of chocolate.
 Think about the number of pieces left after Lily eats her portion and then divide that number by 4. Give it another try, and see if you come up with a different answer!
 }
 
+*Input*
+{
+"Student's Step": "12/4=3, so each one get 3 chocolates."
+}
+*Output*
+{
+"justification": "The student missed the information that Lily ate some of the chocolate herself, and missed the first step, which led to the wrong answer, which is belongs to [a]",
+"intents": [P_LIMITS]
+"response": "...".
 
+*Input*
+{
+"Student's Step": "12/4=3, so each one get 3 chocolates."
+}
+*Output*
+{
+"justification": "The student missed the information that Lily ate some of the chocolate herself, and missed the first step, which led to the wrong answer, which is belongs to [a]",
+"intents": [P_LIMITS]
+"response": "...".
+
+*Input*
+{
+"Student's Step": "12/4=3, so each one get 3 chocolates."
+}
+*Output*
+{
+"justification": "The student missed the information that Lily ate some of the chocolate herself, and missed the first step, which led to the wrong answer, which is belongs to [a]",
+"intents": [P_LIMITS]
+"response": "...".
+
+*Input*
+{
+"Student's Step": "12/4=3, so each one get 3 chocolates."
+}
+*Output*
+{
+"justification": "The student missed the information that Lily ate some of the chocolate herself, and missed the first step, which led to the wrong answer, which is belongs to [a]",
+"intents": [P_LIMITS]
+"response": "...".
 
 
 }
