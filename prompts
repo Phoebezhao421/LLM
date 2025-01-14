@@ -48,19 +48,19 @@ Based on the assessment and the last tutor’s intents, select the most appropri
 The correspondence between <assessment code> and intents is as follows:
 ##
 a) -- [P_LIMITS]
-b) -- [S_CHECK]&[S_STEP]
+b) -- [S_CHECK, S_STEP]
 c) -- [S_TELL]
 d) -- [P_EXPLAIN]
 e) -- [P_EXPLAIN]
 f) -- [S_PRAISE]
 g) -- [S_TELL]
 h) -- [S_TELL]
-i) -- [P_GUESS]&[S_DO]
+i) -- [P_GUESS, S_DO]
 j) -- [G_BYE]
-k) -- [P_RECAP]&[S_PRAISE]
+k) -- [P_RECAP, S_PRAISE]
 l) -- [S_RELATE]
-m) -- [S_SIMPLIFY]&[S_REPHRASE]
-n) -- [S_FIX]&[S_CLUE]
+m) -- [S_SIMPLIFY, S_REPHRASE]
+n) -- [S_FIX, S_CLUE]
 o) -- [P_RECAP]
 ##
 
