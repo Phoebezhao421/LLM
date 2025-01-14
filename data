@@ -89,9 +89,9 @@ G_BYE: It was a pleasure working through the problem with you. Keep practicing, 
 *Input*
 {
 "Problem": "Lily has a chocolate bar divided into 12 equal pieces. She eats one third of the bar. If Lily decides to give the remaining chocolate to her 4 friends equally, how many pieces of chocolate will each person get?",
-"Answer": "Step 1: Calculate 1/3 of the total pieces: 12 \times \frac{1}{3}\ = 4
+"Answer": "Step 1: Calculate 1/3 of the total pieces: 12 \times \frac{1}{3} = 4
 Step 2: Subtract the pieces she ate from the total: 12 - 4 = 8
-Step 3: Find out how many pieces each friend will get: 8 \times \frac{1}{4}\ = 2
+Step 3: Find out how many pieces each friend will get: 8 \times \frac{1}{4} = 2
 Thus, each person will get 2 pieces of chocolate.
 }
 
@@ -136,19 +136,51 @@ P_RECAP: Now, let's recap what you've done so far. After Lily ate those 4 pieces
 }
 *Output*
 {
-"justification": "The student missed the information that Lily ate some of the chocolate herself, and missed the first step, which led to the wrong answer, which is belongs to [a]",
-"intents": [P_LIMITS]
-"response": "...".
+"justification": "The student correctly calculated the number of pieces Lily ate, subtracted that from the total, and then divided the remaining pieces among her friends. This indicates that the student has successfully followed the steps to solve the problem, corresponding to [k].",
+"intents": ["P_RECAP", "S_PRAISE"],
+"response": "P_RECAP: Great job! You correctly calculated that Lily ate 4 pieces of chocolate, which left her with 8 pieces to share. Then, you divided those pieces among her 4 friends and found that each person gets 2 pieces. This is an excellent application of fractions and division!
+S_PRAISE: I'm really impressed with how you worked through the problem step by step. Keep up the great work!"
+}
+}
+
+{
+*Input*
+{
+"Problem": "Emily bought 3 notebooks of the same price and 1 pen. The pen costs 15 HKD, and the total cost for all items is 51 HKD. What is the price of each notebook?",
+"Answer": "Step 1: Let x be the price of each notebook in HKD.
+Step 2: Based on the problem, we can set up the equation: 3x + 15 = 51
+Step 3: Solve the equation: 3x + 15 - 15 = 51 - 15 \n 3x = 36 \n \frac{3x}{3} = \frac{36}{3} \n x = 12
+Therefore, the price of each notebook is 12 HKD.
+}
 
 *Input*
 {
-"Student's Step": "12/4=3, so each one get 3 chocolates."
+"Student's Step": "I don't know which method to use to solve this problem."
 }
 *Output*
 {
-"justification": "The student missed the information that Lily ate some of the chocolate herself, and missed the first step, which led to the wrong answer, which is belongs to [a]",
-"intents": [P_LIMITS]
-"response": "...".
+"justification": "The student is expressing uncertainty about how to approach the problem, indicating that they may need guidance on the method to apply, corresponding to [g].",
+"intents": ["S_TELL"],
+"response": "S_TELL: That's okay! Let's break it down together. To solve this problem, we can start by thinking about what we know. We have the total cost of the notebooks and the pen, and we want to find the price of each notebook. 
+Here’s a method we can use: 
+1. First, let’s define a variable for the unknown, which in this case is the price of each notebook. We can call it x. 
+2. Next, we write an equation that represents the total cost. Since Emily bought 3 notebooks and 1 pen, we can express the total cost as 3x (for the notebooks) plus the cost of the pen. 
+3. Finally, we can set this equal to the total amount she spent, which is 51 HKD. 
+Would you like to try setting up that equation now?"
+}
 
+*Input*
+{
+"Student's Step": "What is an equation?"
+}
+*Output*
+{
+"justification": "The student is asking for clarification on what an equation is, indicating a need for a definition or explanation of the concept, corresponding to [h].",
+"intents": ["S_TELL"],
+"response": "S_TELL: Great question! An equation is a mathematical statement that shows that two expressions are equal to each other. It usually contains an equal sign (=). 
+For example, in our problem, we can create an equation to represent the total cost of the items Emily bought. It would look like this: 3x + 15 = 51. 
+In this equation, '3x' represents the total cost of the 3 notebooks, '15' is the cost of the pen, and '51' is the total amount Emily spent. 
+So, when we solve the equation, we are finding the value of 'x' that makes both sides of the equation equal. Does that help clarify what an equation is?"
+}
 
 }
