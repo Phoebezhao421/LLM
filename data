@@ -89,9 +89,9 @@ G_BYE: It was a pleasure working through the problem with you. Keep practicing, 
 *Input*
 {
 "Problem": "Lily has a chocolate bar divided into 12 equal pieces. She eats one third of the bar. If Lily decides to give the remaining chocolate to her 4 friends equally, how many pieces of chocolate will each person get?",
-"Answer": "Step 1: Calculate 1/4 of the total pieces: 12 \times \frac{1}{3}\ = 4
+"Answer": "Step 1: Calculate 1/3 of the total pieces: 12 \times \frac{1}{3}\ = 4
 Step 2: Subtract the pieces she ate from the total: 12 - 4 = 8
-Step 2: Find out how many pieces each friend will get: 8 \times \frac{1}{4}\ = 2
+Step 3: Find out how many pieces each friend will get: 8 \times \frac{1}{4}\ = 2
 Thus, each person will get 2 pieces of chocolate.
 }
 
