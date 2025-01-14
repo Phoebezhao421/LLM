@@ -26,7 +26,7 @@ So, Andy has 5 oranges.".
 *Output*
 {
 "justification": "The student talk about *buy his fruit*, which is irrelevant to the question and belongs to [n]",
-"intents": [S_FIX]&[S_CLUE]
+"intents": [S_FIX, S_CLUE]
 "response": "S_FIX: It seems like you might be thinking about where the fruits came from, which is an interesting question! However, in this particular problem, we're focusing on figuring out how many oranges Andy has based on the fractions given. Let's try to focus on the numbers and the math part of the problem.
 S_CLUE: Here's a little hint to help you move forward: We know Andy has 12 fruits in total. If one-third are apples and one-fourth are bananas, we can calculate how many of each he has and then figure out how many fruits are left as oranges.
 Remember, the key is to find out how many fruits Andy has of each kind first, and then subtract those from the total to find out how many oranges there are. Give it another try, and let me know what you find!".
@@ -39,7 +39,7 @@ Remember, the key is to find out how many fruits Andy has of each kind first, an
 *Output*
 {
 "justification": "The student calculated 1/3+1/4=7/12 incorrectly as 1/7, which belongs to [b]",
-"intents": [S_CHECK]&[S_STEP]
+"intents": [S_CHECK, S_STEP]
 "response": "I see where you're going with your calculation, and it's great that you're trying to add the fractions together! However, let's take a moment to think about how fractions work in this context.
 S_CHECK: When we add fractions like(\frac{1}{3}\) and(\frac{1}{4}\), do you remember what we need to do with the denominators? Is there a way we could find a common denominator to add these fractions correctly?
 S_STEP: Once you figure out the correct way to add the fractions of apples and bananas, try subtracting that sum from the whole, which represents all of the fruits. That will help you determine the fraction of fruits that are oranges. Give it another shot, and see what you come up with!".
@@ -67,7 +67,7 @@ So, try multiplying 12 \times \frac{5}{12} and see what you get!".
 *Output*
 {
 "justification": "The student calculated the correct answer, which belongs to [k]",
-"intents": [S_PRAISE]&[P_RECAP]
+"intents": [S_PRAISE, P_RECAP]
 "response": "S_PRAISE: Well done! You used fractions correctly to find out how many oranges Andy had. It was great to see how you solved the problem and applied math concepts accurately. Well done!
 P_RECAP: Let's review what we learned from this problem. You first determined the fractions that represented the apples and bananas. Then, you counted the number of apples and bananas and used that to find out how many oranges Andy had left. By multiplying the total number of fruits by the fraction of oranges, you figured out that there were 5 oranges. Did you do this? Please write out your steps in full. This process involves understanding fractions, addition, subtraction, and multiplication. Keep working on it and remember these strategies for future problems!".
 }
@@ -114,7 +114,7 @@ Think about the number of pieces left after Lily eats her portion and then divid
 *Output*
 {
 "justification": "The student provided an answer (4 pieces) but did not explain their thinking or show the calculations leading to that answer, indicating an incomplete or partial solution, which corresponds to [d].",
-"intents": ["P_EXPLAIN"],
+"intents": [P_EXPLAIN],
 "response": "P_EXPLAIN: You mentioned that Lily ate 4 pieces, which is correct! However, can you explain how you arrived at that number? What steps or calculations did you use to find out how many pieces she ate? Let's work through it together so we have the full understanding of the solution."
 }
 
@@ -125,7 +125,7 @@ Think about the number of pieces left after Lily eats her portion and then divid
 *Output*
 {
 "justification": "The student correctly calculated that Lily ate 4 pieces by using the equation 12 * 1/3 = 4, indicating they have a solid understanding of that part of the problem, corresponding to [f].",
-"intents": ["S_PRAISE", "P_RECAP"],
+"intents": [S_PRAISE, P_RECAP],
 "response": "S_PRAISE: Fantastic job! You correctly calculated that Lily ate 4 pieces by multiplying 12 by 1/3. That's exactly right!
 P_RECAP: Now, let's recap what you've done so far. After Lily ate those 4 pieces, how many pieces are left for her to share with her friends? Can you show me how you would calculate that next step?"
 }
@@ -137,7 +137,7 @@ P_RECAP: Now, let's recap what you've done so far. After Lily ate those 4 pieces
 *Output*
 {
 "justification": "The student correctly calculated the number of pieces Lily ate, subtracted that from the total, and then divided the remaining pieces among her friends. This indicates that the student has successfully followed the steps to solve the problem, corresponding to [k].",
-"intents": ["P_RECAP", "S_PRAISE"],
+"intents": [P_RECAP, S_PRAISE],
 "response": "P_RECAP: Great job! You correctly calculated that Lily ate 4 pieces of chocolate, which left her with 8 pieces to share. Then, you divided those pieces among her 4 friends and found that each person gets 2 pieces. This is an excellent application of fractions and division!
 S_PRAISE: I'm really impressed with how you worked through the problem step by step. Keep up the great work!"
 }
@@ -160,7 +160,7 @@ Therefore, the price of each notebook is 12 HKD.
 *Output*
 {
 "justification": "The student is expressing uncertainty about how to approach the problem, indicating that they may need guidance on the method to apply, corresponding to [g].",
-"intents": ["S_TELL"],
+"intents": [S_TELL],
 "response": "S_TELL: That's okay! Let's break it down together. To solve this problem, we can start by thinking about what we know. We have the total cost of the notebooks and the pen, and we want to find the price of each notebook. 
 Here’s a method we can use: 
 1. First, let’s define a variable for the unknown, which in this case is the price of each notebook. We can call it x. 
@@ -176,7 +176,7 @@ Would you like to try setting up that equation now?"
 *Output*
 {
 "justification": "The student is asking for clarification on what an equation is, indicating a need for a definition or explanation of the concept, corresponding to [h].",
-"intents": ["S_TELL"],
+"intents": [S_TELL],
 "response": "S_TELL: Great question! An equation is a mathematical statement that shows that two expressions are equal to each other. It usually contains an equal sign (=). 
 For example, in our problem, we can create an equation to represent the total cost of the items Emily bought. It would look like this: 3x + 15 = 51. 
 In this equation, '3x' represents the total cost of the 3 notebooks, '15' is the cost of the pen, and '51' is the total amount Emily spent. 
