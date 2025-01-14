@@ -109,27 +109,30 @@ Think about the number of pieces left after Lily eats her portion and then divid
 
 *Input*
 {
-"Student's Step": "12/4=3, so each one get 3 chocolates."
+"Student's Step": "Lily ate 4 pieces."
 }
 *Output*
 {
-"justification": "The student missed the information that Lily ate some of the chocolate herself, and missed the first step, which led to the wrong answer, which is belongs to [a]",
-"intents": [P_LIMITS]
-"response": "...".
+"justification": "The student provided an answer (4 pieces) but did not explain their thinking or show the calculations leading to that answer, indicating an incomplete or partial solution, which corresponds to [d].",
+"intents": ["P_EXPLAIN"],
+"response": "P_EXPLAIN: You mentioned that Lily ate 4 pieces, which is correct! However, can you explain how you arrived at that number? What steps or calculations did you use to find out how many pieces she ate? Let's work through it together so we have the full understanding of the solution."
+}
 
 *Input*
 {
-"Student's Step": "12/4=3, so each one get 3 chocolates."
+"Student's Step": "oh, 12*1/3=4."
 }
 *Output*
 {
-"justification": "The student missed the information that Lily ate some of the chocolate herself, and missed the first step, which led to the wrong answer, which is belongs to [a]",
-"intents": [P_LIMITS]
-"response": "...".
+"justification": "The student correctly calculated that Lily ate 4 pieces by using the equation 12 * 1/3 = 4, indicating they have a solid understanding of that part of the problem, corresponding to [f].",
+"intents": ["S_PRAISE", "P_RECAP"],
+"response": "S_PRAISE: Fantastic job! You correctly calculated that Lily ate 4 pieces by multiplying 12 by 1/3. That's exactly right!
+P_RECAP: Now, let's recap what you've done so far. After Lily ate those 4 pieces, how many pieces are left for her to share with her friends? Can you show me how you would calculate that next step?"
+}
 
 *Input*
 {
-"Student's Step": "12/4=3, so each one get 3 chocolates."
+"Student's Step": "12*1/3=4, 12-4=8, 8*1/4=2."
 }
 *Output*
 {
