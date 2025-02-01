@@ -65,7 +65,7 @@ o) -- [P_RECAP]
 ##
 
 Proceed step by step. 
-First, briefly justify your selection, then provide a list containing the selected intents from the *Taxonomy*. Next, Generate the tutor's response based on the intens.
+First, briefly justify your selection, then provide a list containing the selected intents from the *Taxonomy*. Next, Generate the tutor's response based on the intends.
 
 Your output answer in the following json format:
 ##
